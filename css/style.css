@@ -1,0 +1,173 @@
+body {
+    background-color: aliceblue;
+}
+
+h1 {
+    text-align: center;
+    color: black;
+}
+
+h4 {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+header {
+    padding: 20px 0 0 0;
+    text-align: center;
+    background-color: black;
+}
+
+.navct {
+    color: blue;
+    padding-top: 5px;
+    text-transform: uppercase;
+}
+
+@media (min-width: 750) {
+    header {
+        text-align: left;
+    }
+}
+
+ul{
+    list-style: none;
+}
+
+#hero {
+    background-image: url(../img/newgen.jpg);
+    position: relative;
+    z-index: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 700px;
+}
+
+#hero::before{
+    content:"";
+    position: absolute;
+    top: 0;
+    min-height: 100%;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+
+#encabezado {
+    margin: relative;
+}
+
+.submenu #carrito {
+    display: none;
+}
+
+.submenu:hover #carrito {
+    display: block;
+    position: absolute;
+    right: 0%;
+    color: white;
+    top: 100%;
+    z-index: 1;
+    background-color: #2a2420;
+    padding: 20px;
+    min-height: 400px;
+    min-width: 300px;
+}
+
+.vacio {
+    padding: 10px;
+    background-color: blue;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+}
+
+.contenido-hero{
+    padding-top: 120px;
+    margin-top: 80px;
+}
+
+.contenido-hero form{
+    position: relative;
+    margin-bottom: 0;
+}
+
+.contenido-hero form #buscador {
+    height: 50px;
+    margin-bottom: 0;
+}
+
+.contenido-hero form .submit-buscador {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    padding: 0;
+    display: block;
+    text-indent: -9999px;
+    width: 50px;
+    background-image: url(../img/lupa.png);
+    background-position: right center;
+    background-repeat: no-repeat;
+    border: none;
+}
+
+.barra {
+    padding: 20px 0;
+    background: #00008b;  
+}
+
+.barra p {
+    margin: 0;
+    color: white;
+}
+
+#lista-carrito .row {
+    margin-bottom: 20px;
+}
+
+.agregar-carrito {
+    margin: 10px;
+}
+
+.card {
+    text-align: center;
+    box-shadow: 0 25px 98px 0 rgb(0 0 0 / 3%);
+    background: rgba(95, 200, 226, 0.863);
+}
+
+@media (min-width: 550px) {
+    .card {
+        text-align: left;
+    }
+}
+
+.info-card {
+    padding: 10px 20px;
+    color: black;
+}
+
+.info-card p,
+.card h4 {
+    margin-bottom:  5px;
+}
+
+.info-card .precio span {
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.footer {
+    border-top: 1px solid black;
+    margin-top: 40px;
+    padding-top: 40px;
+}
+
+.footer .menu a {
+    display: block;
+    color: black;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
